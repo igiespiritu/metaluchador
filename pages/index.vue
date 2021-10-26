@@ -21,7 +21,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'A boilerplate for Nuxt projects. It includes Bootstrap | SCSS | JQuery.'
+          content: 'Metaverse Luchador'
         }
       ]
     }

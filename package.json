@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-boilerplate",
+  "name": "Metaverse Luchador",
   "version": "1.0.0",
-  "description": "A boilerplate for Nuxt projects. It includes Bootstrap | SCSS | JQuery.",
-  "author": "GuillaumeFerron",
+  "description": "Metaverse Luchador",
+  "author": "Igiespiritu",
   "private": true,
   "scripts": {
     "dev": "nuxt",
