@@ -13,3 +13,14 @@ $grid-breakpoints: map-merge(
                 ),
                 $grid-breakpoints
 );
+
+$s3-base-url: 'https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/';
+
+/**
+COLORS
+*/
+$white: #FFF;
+$black: #000;
+
+$meta-primary: #b72cff;
+$meta-secondary: #ff00c7;
