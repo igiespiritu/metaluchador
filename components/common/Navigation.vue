@@ -4,17 +4,27 @@
         <div class="logo-w-text"></div>
         <div class="cta flex-center meta-primary mt-2"><h3 class="m-0">Brawling Soon</h3></div>
     </div>
+    <div class="col-6">
+      <div class="hamburger-menu"><hamburger /></div>
+      <div class="discord"></div>
+      <div class="twitter"></div>
+      <div class="collections"></div>
+    </div>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'Navigation'
+import Hamburger from './Hamburger.vue'
+
+export default {
+  name: 'Navigation',
+  components: {
+    Hamburger
   }
+}
 </script>
 
 <style lang="scss">
-
 .nav {
   height: 56.75vw;
 }
@@ -36,5 +46,4 @@
   width: 24.7vw;
   height: 4vw;
 }
-
 </style>

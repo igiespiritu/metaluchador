@@ -9,10 +9,16 @@
 @font-face {
   font-family: "PixelDigivolve";
   font-weight: 400;
-  src: url("../fonts/Pixel\ Digivolve.otf") format(".otf");
+  src: url('../fonts/pixel_digivolve-webfont.woff2') format('woff2'),
+       url('../fonts/pixel_digivolve-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "PixelDigivolveItalic";
   font-weight: 400;
-  src: url("../fonts/Pixel\ Digivolve\ Italic.otf") format(".otf");
+  src: url('../fonts/pixel_digivolve_italic-webfont.woff2') format('woff2'),
+       url('../fonts/pixel_digivolve_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
