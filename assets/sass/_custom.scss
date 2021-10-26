@@ -1,3 +1,9 @@
 /**
   Customized properties (to override plugin styling for example)
  */
+
+ .flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }

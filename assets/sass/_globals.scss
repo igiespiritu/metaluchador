@@ -11,3 +11,21 @@
   top: -99999999px;
   left: -99999999px;
 }
+
+body {
+  background-color: #18191c;
+  font-family: 'PixelDigivolve';
+  color: #fff;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+}
+
+.home-header {
+  background: url($s3-base-url+'images/home/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 56.75vw;
+}
