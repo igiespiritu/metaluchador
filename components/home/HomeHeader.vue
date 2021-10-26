@@ -14,12 +14,9 @@ export default {
   name: 'HomeHeader',
   data() {
     return {
-      wrestlerURL: process.env.S3_WRESTLER_URL,
+      wrestlerURL: 'https://meta-luchador-wrestlers.s3.ap-southeast-1.amazonaws.com/',
       wrestlerNumber: 132
     }
-  },
-  mounted() {
-    console.log(process.env.S3_BASE_URL)
   }
 }
 </script>
