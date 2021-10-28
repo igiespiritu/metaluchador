@@ -1,11 +1,12 @@
-.font-PixelDigivolve {
-  font-family: 'PixelDigivolve';
-}
+// font family
+.font-PixelDigivolve { font-family: 'PixelDigivolve'; }
+.font-PixelDigivolveItalic { font-family: 'PixelDigivolveItalic'; }
 
-.font-PixelDigivolveItalic {
-  font-family: 'PixelDigivolveItalic';
-}
+// font color
+.meta-primary { color: $meta-primary; }
+.meta-secondary { color: $meta-secondary; }
+.meta-tertiary { color: $meta-tertiary; }
+.meta-accent { color: $meta-accent; }
 
-.meta-primary {
-  color: $meta-primary;
-}
+// font sizes
+.small-text { font-size: 0.8em; }
