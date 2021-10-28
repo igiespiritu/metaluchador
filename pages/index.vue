@@ -2,6 +2,8 @@
   <section>
     <h1 class="seo-title">{{ title }}</h1>
     <home-header />
+    <about />
+    <what-why />
     <navigation />
     <custom-footer />
   </section>
@@ -11,6 +13,8 @@
 const pkg = require('../package')
 import Navigation from '../components/common/Navigation.vue'
 import HomeHeader from '../components/home/HomeHeader.vue'
+import About from '../components/home/AboutSection.vue'
+import WhatWhy from '../components/home/WhatWhy.vue'
 import CustomFooter from '../components/common/CustomFooter.vue'
 
 export default {
@@ -29,6 +33,8 @@ export default {
   components: {
     Navigation,
     HomeHeader,
+    About,
+    WhatWhy,
     CustomFooter
   },
   data() {

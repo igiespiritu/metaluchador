@@ -4,7 +4,8 @@ export const state = () => ({
   cachedRoutes: [],
   screenSize: false,
   browser: '',
-  defaultLoaderTimeout: 1000
+  defaultLoaderTimeout: 1000,
+  s3BaseBucket: 'https://metalucha.s3.ap-southeast-1.amazonaws.com/'
 })
 
 export const getters = {
