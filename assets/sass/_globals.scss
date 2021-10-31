@@ -16,6 +16,7 @@ body {
   background-color: #18191c;
   font-family: 'PixelDigivolve';
   color: #fff;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -23,9 +24,17 @@ body {
   top: 0;
 }
 
+.content {
+  max-width: 1920px;
+  margin: auto;
+}
+
 .home-header {
-  background: url($s3-base-url+'images/home/bg.jpg');
+  background: url(https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/home/bg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
+  width: 100vw;
   height: 56.75vw;
+  max-height: 100vh;
 }

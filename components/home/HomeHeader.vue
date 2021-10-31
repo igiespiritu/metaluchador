@@ -1,5 +1,5 @@
 <template>
-  <section class="home-header">
+  <section class="home-header content">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="col-6"></div>
       <div class="col-6">
@@ -25,6 +25,8 @@ export default {
 .wrestler {
   width: 50vw;
   height: 50vw;
+  max-width: 960px;
+  max-height: 960px;
   margin-left: -8vw;
 }
 </style>

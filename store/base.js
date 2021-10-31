@@ -69,6 +69,7 @@ export const mutations = {
    * @constructor
    */
   SET_SCREEN_SIZE(state, value) {
+    console.log('screensize', value)
     state.screenSize = value
   },
   /**
