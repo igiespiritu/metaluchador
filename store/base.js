@@ -3,6 +3,8 @@ export const state = () => ({
   loaded: false,
   cachedRoutes: [],
   screenSize: false,
+  screenWidth: 0,
+  screenHeight: 0,
   browser: '',
   defaultLoaderTimeout: 1000,
   s3BaseBucket: 'https://metalucha.s3.ap-southeast-1.amazonaws.com/'
@@ -69,7 +71,6 @@ export const mutations = {
    * @constructor
    */
   SET_SCREEN_SIZE(state, value) {
-    console.log('screensize', value)
     state.screenSize = value
   },
   /**
@@ -81,6 +82,17 @@ export const mutations = {
    */
   SET_BROWSER(state, value) {
     state.browser = value
+  },
+  /**
+   * Set screen dimension
+   *
+   * @param state
+   * @param value
+   * @constructor
+   */
+  SET_SCREEN_DIMENSION(state, {...value}) {
+    state.screenWidth = value.width
+    state.screenHeight = value.height
   }
 }
 export const actions = {
@@ -98,6 +110,8 @@ export const actions = {
     })
 
     commit('SET_BROWSER', checkBrowser())
+
+    commit('SET_SCREEN_DIMENSION', {'width': $(window).innerWidth(), 'height': window.innerHeight})
   }
 }
 

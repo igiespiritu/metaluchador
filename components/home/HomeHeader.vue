@@ -1,5 +1,5 @@
 <template>
-  <section class="home-header content">
+  <section class="home-header content" :class="{ 'wide' : isWide }">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="col-6"></div>
       <div class="col-6">
@@ -15,13 +15,27 @@ export default {
   data() {
     return {
       wrestlerURL: 'https://meta-luchador-wrestlers.s3.ap-southeast-1.amazonaws.com/',
-      wrestlerNumber: 132
+      wrestlerNumber: 132,
+      screenWidth: 0
     }
+  },
+  computed: {
+    isWide() {
+      return this.screenWidth > 1920
+    }
+  },
+  mounted() {
+    console.log(window.innerWidth)
+    this.screenWidth = window.innerWidth
+    window.addEventListener('resize', _ => { this.screenWidth = window.innerWidth })
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.home-header.wide {
+  margin: calc(((100vh - 1080px) / 2) * -1) auto;
+}
 .wrestler {
   width: 50vw;
   height: 50vw;

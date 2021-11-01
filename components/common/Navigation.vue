@@ -5,7 +5,7 @@
           <div class="logo-img"></div>
           <div class="logo-txt"></div>
         </div>
-        <pixelated-button :pixel-color="buttonColor" :pixel="`.3em`">BRAWLING SOON</pixelated-button>
+        <pixelated-button class="logo-cta" :pixel-color="buttonColor" :pixel="`.1em`">BRAWLING SOON</pixelated-button>
         <!-- <div class="cta flex-center meta-secondary mt-2 pixel-border"><h3 class="m-0">Brawling Soon</h3></div> -->
     </div>
     <div class="col-6 d-flex justify-content-end">
@@ -32,13 +32,24 @@ export default {
   },
   data (){
     return {
-      buttonColor: variables.metaSecondary
+      buttonColor: variables.metaSecondary,
+      logoImgHeight: 0
     }
   },
   methods: {
     scrolling() {
       const top = document.scrollingElement.scrollTop
-      console.log(top)
+      const scale = (1 - ((top / 1018)))
+      const height = 1080 - top
+
+      if(top < 1080 && scale > 0.13) {
+        console.log('top:', top, 'scale', scale)
+        $('.logo-img')[0].style.transform = `scale(${scale})`
+        $('.logo-txt')[0].style.transform = `scale(${scale})`
+        // $('.logo')[0].style.height = `${height}px`
+      }
+
+      $('.logo-cta')[0].style.transform = `scale(${scale > 0 ? scale : 0})`
     }
   },
   mounted() {

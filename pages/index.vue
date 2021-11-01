@@ -40,7 +40,9 @@ export default {
   data() {
     return {
       title: 'Index',
-      pkg: pkg
+      pkg: pkg,
+      componentKey: 0,
+      visibleHeight: this.$store.state.base.innerHeight
     }
   },
   mounted() {
