@@ -6,14 +6,7 @@
       </div>
       <div class="col-9 p-5">
         <h2 class="font-PixelDigivolveItalic meta-accent mb-4">ABOUT&nbsp;METAVERSE LUCHADOR&nbsp;ENTERTAINMENT</h2>
-        <p class="meta-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Curabitur fermentum luctus nisi, a condimentum lacus facilisis
-        rhoncus. Mauris varius odio sed venenatis maximus. Nunc sem est, 
-        mollis sed luctus a, blandit at mauris. Nullam commodo,
-        ex auctor scelerisque porttitor, lacus turpis malesuada orci,
-        sit amet auctor ex massa at nunc. Donec vel viverra leo
-        Morbi eu imperdiet risus, mattis scelerisque nunc. Sed ut
-        tincidunt erat. Integer a volutpat urna, quis aliquet dolor. </p>
+        <p class="meta-primary">Metaverse Luchador Entertainment (MLE) is a premiere NFT project in the Cardano Blockchain. It is the home of the Meta Luchas-- pixelized luchadors set to battle it out in a game that will be launched in the future.</p>
       </div>
     </div>
   </section>
