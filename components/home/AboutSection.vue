@@ -1,8 +1,8 @@
 <template>
-  <section class="about p-5">
+  <section class="about content">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="col-3">
-          <div class="wrestler" :style="`background: url(${wrestlerURL}promotional-wrestlers/Wrestler_${wrestlerNumber}.gif); background-size: contain;`"></div>
+          <img class="wrestler" :src="`${wrestlerURL}promotional-wrestlers/Wrestler_${wrestlerNumber}.gif`">
       </div>
       <div class="col-9 p-5">
         <h2 class="font-PixelDigivolveItalic meta-accent mb-4">ABOUT&nbsp;METAVERSE LUCHADOR&nbsp;ENTERTAINMENT</h2>
@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 .wrestler {
-  width: 26.7vw;
-  height: 28.5vw;
+  width: 100%;
+  object-fit: contain;
 }
 </style>

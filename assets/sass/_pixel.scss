@@ -1,0 +1,15 @@
+/**
+ PIXEL border effect
+ */
+.pixel-border {
+    margin: calc(var(--pixel) * 10);
+    background: var(--pixel-color);
+    box-shadow:
+        calc(var(--pixel) * -3.25) 0 0 0 var(--pixel-color),
+		calc(var(--pixel) * 3.25) 0 0 0 var(--pixel-color),
+		0 0 0 calc(var(--pixel) * 2) var(--pixel-color),
+		0 calc(var(--pixel) * -2.5) 0 calc(var(--pixel) * 1) var(--pixel-color),
+		0 calc(var(--pixel) * 2.5) 0 calc(var(--pixel) * 1) var(--pixel-color),
+		0 calc(var(--pixel) * -5) 0 calc(var(--pixel) * -0.4) var(--pixel-color),
+		0 calc(var(--pixel) * 5) 0 calc(var(--pixel) * -0.4) var(--pixel-color);
+}

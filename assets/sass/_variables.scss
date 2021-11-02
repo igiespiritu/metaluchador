@@ -27,3 +27,10 @@ $meta-primary: #b72cff;
 $meta-secondary: #ff00c7;
 $meta-tertiary: #00d6ff;
 $meta-accent: #a6f1ff;
+
+:export{
+        metaPrimary: $meta-primary;
+        metaSecondary: $meta-secondary;
+        metaTertiary: $meta-tertiary;
+        metaAccent: $meta-accent;
+}

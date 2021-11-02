@@ -1,5 +1,5 @@
 <template>
-    <section class="about p-5 d-flex flex-column">
+    <section class="what-why content d-flex flex-column">
         <div class="d-flex justify-content-center h-100 my-5">
             <div class="col-2"></div>
             <div class="col-5">
