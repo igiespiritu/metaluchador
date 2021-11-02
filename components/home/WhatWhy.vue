@@ -6,8 +6,8 @@
                 <h2 class="font-PixelDigivolveItalic meta-tertiary text-right">WHAT&nbsp;IS METAVERSE&nbsp;LUCAHDOR ENTERTAINMENT&nbsp;?</h2>
             </div>
             <div class="col-4">
-                <p class="meta-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur fermentum</p>
+                <p class="meta-primary">MLE's aim is to create an experience where wrestling fans and NFT collectors jump inside a wrestling ring for bragging rights and for the coveted title of world champion.</p>
+                <p class="meta-primary">3 divisions will storm season 1 as Heavyweights, Cruiserwieghts, and Middleweights duke it out for ring supremacy. Each division will be composed of 1500 distinct Meta Luchas each with their own unique aesthetic. The team is composed of seasoned game developers, coders, and artists, lead by LuchaGab, an Industrial Designer from the Philippines. LuchaGab is an avid fan of wrestling and wishes to bring a great experience to the collectors and supporters of the project.</p>
             </div>
             <div class="col-1"></div>
         </div>
@@ -17,8 +17,7 @@
                 <h2 class="font-PixelDigivolveItalic meta-tertiary text-right">WHY&nbsp;GET&nbsp;A LUCHADOR&nbsp;?</h2>
             </div>
             <div class="col-4">
-                <p class="meta-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur fermentum</p>
+                <p class="meta-primary">A total of 4500 Meta Luchas will be minted for S1 and each one is qualified to compete in the future</p>
             </div>
             <div class="col-1"></div>
         </div>
