@@ -10,7 +10,7 @@ export default {
     props: {
         pixel: {
             type: String,
-            default: '0.15em'
+            default: '0.3em'
         },
         pixelColor: {
             type: String,
