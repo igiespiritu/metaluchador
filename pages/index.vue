@@ -4,6 +4,7 @@
     <home-header />
     <about />
     <what-why />
+    <road-map />
     <navigation />
     <custom-footer />
   </section>
@@ -15,6 +16,7 @@ import Navigation from '../components/common/Navigation.vue'
 import HomeHeader from '../components/home/HomeHeader.vue'
 import About from '../components/home/AboutSection.vue'
 import WhatWhy from '../components/home/WhatWhy.vue'
+import RoadMap from '../components/home/RoadMap.vue'
 import CustomFooter from '../components/common/CustomFooter.vue'
 
 export default {
@@ -35,6 +37,7 @@ export default {
     HomeHeader,
     About,
     WhatWhy,
+    RoadMap,
     CustomFooter
   },
   data() {

@@ -91,10 +91,10 @@ export default {
 }
 .logo {
   position: relative;
-  width: 24.7vw;
-  height: 31.1vw;
-  max-width: 412px;
-  max-height: 597px;
+  width: 412px;
+  height: 597px;
+  // max-width: 412px;
+  // max-height: 597px;
   .logo-img {
     position: absolute;
     top: 0;
