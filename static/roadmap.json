@@ -1,0 +1,197 @@
+{
+    "row" : [
+        {
+            "size": 3,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "cd9cc9"
+            }
+        },
+        {
+            "size": 0
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "55545a"
+            },
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-1.png' />"
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "61be85"
+            },
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-2.png' />"
+        },
+        {
+            "size": 4,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "f5b426"
+            },
+            "content": "<h3 class='font-PixelMania text-center'>META LUCHADOR</h3><img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/stars.png' />"
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "f05b81"
+            }
+        },
+        {
+            "size": 0
+        }
+    ],
+    "row-2" : [
+        {
+            "size": 1
+        },
+        {
+            "size": 2,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "e5e343"
+            }
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "22bdcf"
+            },
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-3.png' />"
+        },
+        {
+            "size": 3,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "cd9cc9"
+            },
+            "content": "<div class='d-flex'><div class='col'><h2 class='font-PixelMania'>S1</h2><h2 class='font-PixelMania'>S2</h2></div><div class='col'><h5 class='font-PixelDigivolve mr-5'>Oct 2021</h5><h5 class='font-PixelDigivolve'>Dec 2021- jan2022</h5></div></div>"
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "b5d45c"
+            },
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-4.png' />"
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "f05b81"
+            },
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-5.png' />"
+        }
+    ],
+    "row-3" : [
+        {
+            "size": 2
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "22bdcf"
+            }
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "e9da35"
+            },
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-6.png' />"
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "9676b5"
+            },
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-7.png' />"
+        },
+        {
+            "size": 3,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "497bc2"
+            },
+            "content": "<h5 class='font-PixelMania text-center m-0'>SEASON<br/>3<span class='font-PixelDigivolve'> & </span>4</h5><p class='text-center m-0'>2022</p><p class='font-PixelMania text-center xtra-small-text m-0'>BABY LUCHA<br />AIRDROP</p><p class='text-center m-0'>2022</p>"
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "f59d22"
+            },
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-8.png' />"
+        },
+        {
+            "size": "0_25"
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "22bdcf"
+            }
+        }
+    ],
+    "row-4" : [
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "61be85"
+            }
+        },
+        {
+            "size": 2
+        },
+        {
+            "size": 2,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "f67929"
+            },
+            "content": "<h5 class='font-PixelMania text-center m-0'>HLE<br />GAME<br />LAUNCH</h5><p class='text-center m-0'>2023</p>"
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "9ed9e9"
+            },
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-9.png' />"
+        },
+        {
+            "size": 1,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "ee326f"
+            },
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-10.png' />"
+        },
+        {
+            "size": 2,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "e5e343"
+            },
+            "content": "<h5 class='font-PixelMania text-center m-0'>LUCHA<br />MANIA<br />1</h5><p class='text-center m-0'>2023</p>"
+        },
+        {
+            "size": 3,
+            "pixelatedBg": {
+                "size": 10,
+                "color": "cd9cc9"
+            }
+        }
+    ]
+}

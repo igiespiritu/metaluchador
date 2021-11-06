@@ -25,7 +25,6 @@ export default {
     }
   },
   mounted() {
-    console.log(window.innerWidth)
     this.screenWidth = window.innerWidth
     window.addEventListener('resize', _ => { this.screenWidth = window.innerWidth })
   }
@@ -33,8 +32,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home-header.wide {
-  margin: calc(((100vh - 1080px) / 2) * -1) auto;
+.home-header {
+  background: url(https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/home/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100vw;
+  height: 56.75vw;
+  min-height: 1080px;
+  max-height: 100vh;
+  &.wide {
+    min-height: unset;
+    margin: calc(((100vh - 1080px) / 2) * -1) auto;
+  }
 }
 .wrestler {
   width: 50vw;

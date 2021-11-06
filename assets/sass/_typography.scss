@@ -1,12 +1,15 @@
 // font family
 .font-PixelDigivolve { font-family: 'PixelDigivolve'; }
 .font-PixelDigivolveItalic { font-family: 'PixelDigivolveItalic'; }
+.font-PixelMania { font-family: 'PixelMania'; line-height: 1.6; }
 
 // font color
 .meta-primary { color: $meta-primary; }
 .meta-secondary { color: $meta-secondary; }
 .meta-tertiary { color: $meta-tertiary; }
 .meta-accent { color: $meta-accent; }
+.meta-black { color: $black; }
 
 // font sizes
 .small-text { font-size: 0.8em; }
+.xtra-small-text { font-size: 0.6em; }
