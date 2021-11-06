@@ -7,8 +7,7 @@
             <div class="logo-img"></div>
             <div class="logo-txt"></div>
           </div>
-          <!-- <pixelated-button class="logo-cta" :pixel-color="buttonColor" :pixel="`.3em`">BRAWLING SOON</pixelated-button> -->
-          <div class="logo-cta flex-center meta-secondary mt-2 pixel-border"><h3 class="m-0">Brawling Soon</h3></div>
+          <div class="logo-cta"><pixelated-bg :pixel="10" :pixelColor="`00d6ff`">BRAWLING SOON</pixelated-bg></div>
         </div>    
       </div>
     </div>
@@ -26,13 +25,15 @@
 <script>
 import Hamburger from './Hamburger.vue'
 import PixelatedButton from './PixelatedButton.vue'
+import PixelatedBg from './PixelatedBg.vue'
 import variables from '~/assets/sass/_variables.scss'
 
 export default {
   name: 'Navigation',
   components: {
     Hamburger,
-    PixelatedButton
+    PixelatedButton,
+    PixelatedBg
   },
   data (){
     return {
@@ -69,8 +70,6 @@ export default {
         $('.logo-column')[0].style.bottom = `${containerBottom}%`
         $('.logo-column')[0].style.right = `${containerRight}%`
       }
-
-      // $('.logo-cta')[0].style.transform = `scale(${scale})`
     }
   },
   mounted() {
