@@ -23,16 +23,25 @@
         </div>
         <div class="flex-center flex-column my-5">
             <h5 class="font-PixelDigivolveItalic">STILL&nbsp;CLUELESS&nbsp;?</h5>
-            <div class="cta flex-center">REACH OUT!</div>
+            <div class="reach-out">
+                <pixelated-bg  :pixel="6" :pixelColor="`00d6ff`"><h4 class="cta flex-center m-0">REACH OUT!</h4></pixelated-bg>
+            </div>
+            
         </div>
     </section>
 </template>
 
 <script>
+import PixelatedBg from '../common/PixelatedBg.vue'
 export default {
-  name: 'WhatWhy'
+  name: 'WhatWhy',
+  components: { PixelatedBg }
 }
 </script>
 
 <style lang="scss" scoped>
+.reach-out {
+    width: 200px;
+    height: 50px;
+}
 </style>
