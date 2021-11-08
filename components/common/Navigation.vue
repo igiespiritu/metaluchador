@@ -1,17 +1,15 @@
 <template>
-  <div class="nav vw-100">
-    <div class="left-nav m-4">
-      <!-- <div class=""> -->
+  <div :class="`nav vw-100 ${ isMobile ? 'mobile' : '' }`">
+    <div class="left-nav m-2 m-md-4">
         <div class="logo-column flex-column flex-center margin-center">
           <div class="logo flex-column flex-center justify-content-between">
             <div class="logo-img"></div>
             <div class="logo-txt"></div>
           </div>
           <div class="logo-cta"><pixelated-bg :pixel="8" :pixelColor="`00d6ff`"><h2 class="m-3">BRAWLING SOON</h2></pixelated-bg></div>
-        </div>    
-      <!-- </div> -->
+        </div>
     </div>
-    <div class="right-nav m-4">
+    <div class="right-nav m-1 m-md-4">
       <div class="d-flex align-items-center flex-column">
         <div class="hamburger-menu my-2"><hamburger /></div>
         <div class="discord my-2"></div>
@@ -48,25 +46,36 @@ export default {
       }
     }
   },
+  computed: {
+    isMobile() {
+      return this.$store.state.base.screenSize == 'xs'
+    }
+  },
   methods: {
     scrolling() {
       const top = document.scrollingElement.scrollTop
 
-      if(top >= 540 && !this.mini) {
-        this.mini = true
-        gsap.to('.logo', 0.5, { width: this.logoDimension.minWidth, height: this.logoDimension.minHeight })
-        gsap.to('.logo-img', 0.5, { width: '20%'})
-        gsap.to('.logo-txt', 0.5, { width: '75%'})
-        gsap.to('.logo-cta', 0.5, { scale: 0, marginTop: 0, height: 0})
-        gsap.to('.left-nav', 0.5, { height: 62, width: this.logoDimension.minWidth })
-      } else if(top <= 540 && this.mini) {
-        this.mini = false
-        gsap.to('.logo', 0.5, { width: this.logoDimension.maxWidth, height: this.logoDimension.maxHeight })
-        gsap.to('.logo-img', 0.5, { width: '100%'})
-        gsap.to('.logo-txt', 0.5, { width: '100%'})
-        gsap.to('.logo-cta', 0.5, { scale: 1, marginTop: 20, height: 'unset'})
-        gsap.to('.left-nav', 0.5, { height: 1080, width: '50%' })
+      if(top >= 540 && !this.mini && !this.isMobile) {
+        this.shrink()
+      } else if(top <= 540 && this.mini && !this.isMobile) {
+        this.expand()
       }
+    },
+    shrink() {
+      this.mini = true
+      gsap.to('.logo', 0.5, { width: this.logoDimension.minWidth, height: this.logoDimension.minHeight })
+      gsap.to('.logo-img', 0.5, { width: '20%'})
+      gsap.to('.logo-txt', 0.5, { width: '75%'})
+      gsap.to('.logo-cta', 0.5, { scale: 0, marginTop: 0, height: 0})
+      gsap.to('.left-nav', 0.5, { height: 62, width: this.logoDimension.minWidth })
+    },
+    expand() {
+      this.mini = false
+      gsap.to('.logo', 0.5, { width: this.logoDimension.maxWidth, height: this.logoDimension.maxHeight })
+      gsap.to('.logo-img', 0.5, { width: '100%'})
+      gsap.to('.logo-txt', 0.5, { width: '100%'})
+      gsap.to('.logo-cta', 0.5, { scale: 1, marginTop: 20, height: 'unset'})
+      gsap.to('.left-nav', 0.5, { height: 1080, width: '50%' })
     }
   },
   mounted() {
@@ -82,7 +91,8 @@ export default {
   .left-nav {
     position: absolute;
     width: 50%;
-    height: 1080px;
+    height: 100vh;
+    max-height: 1080px;
   }
   .right-nav {
     position: absolute;
@@ -93,8 +103,6 @@ export default {
   position: relative;
   width: 412px;
   height: 597px;
-  // max-width: 412px;
-  // max-height: 597px;
   .logo-img {
     position: absolute;
     top: 0;
@@ -122,6 +130,28 @@ export default {
     height: 100%;
     max-width: 412px;
     max-height: 121px;
+  }
+}
+
+.mobile {
+  .left-nav {
+    width: 255px;
+    height: 62px;
+  }
+  .logo {
+    width: 255px;
+    height: 62px;
+    .logo-img {
+      width: 20%;
+    }
+    .logo-txt {
+      width: 75%;
+    }
+  }
+  .logo-cta {
+    display: none;
+    margin-top: 0;
+    height: 0;
   }
 }
 
