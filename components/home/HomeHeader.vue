@@ -1,9 +1,10 @@
 <template>
-  <section class="home-header content" :class="{ 'wide' : isWide }">
-    <div class="d-flex justify-content-center align-items-center h-100">
-      <div class="col-6"></div>
-      <div class="col-6">
-        <div class="wrestler" :style="`background: url(${wrestlerURL}promotional-wrestlers/Wrestler_${wrestlerNumber}.gif); background-size: contain;`"></div>
+  <section class="home-header content">
+    <div class="d-flex justify-content-center h-100">
+      <div class="col-6 d-none d-md-block"></div>
+      <div class="col-12 col-md-6 d-flex justify-content-start align-items-end w-100 h-100">
+        <!-- <div class="wrestler w-100 h-100" :style="`background: url(${wrestlerURL}promotional-wrestlers/Wrestler_${wrestlerNumber}.gif); background-size: contain;`"></div> -->
+        <img class="wrestler w-100 h-100" :src="`${wrestlerURL}promotional-wrestlers/Wrestler_${wrestlerNumber}.gif`" alt="wrestler">
       </div>
     </div>
   </section>
@@ -18,15 +19,6 @@ export default {
       wrestlerNumber: 132,
       screenWidth: 0
     }
-  },
-  computed: {
-    isWide() {
-      return this.screenWidth > 1920
-    }
-  },
-  mounted() {
-    this.screenWidth = window.innerWidth
-    window.addEventListener('resize', _ => { this.screenWidth = window.innerWidth })
   }
 }
 </script>
@@ -35,22 +27,22 @@ export default {
 .home-header {
   background: url(https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/home/bg.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 56.75vw;
-  min-height: 1080px;
-  max-height: 100vh;
-  &.wide {
-    min-height: unset;
-    margin: calc(((100vh - 1080px) / 2) * -1) auto;
+  height: 100vh;
+  max-width: 1920px;
+  max-height: 1080px;
+  @include media-breakpoint-down(md) {
+    height: 60vh;
+    background-position: 75% 50%;
   }
 }
 .wrestler {
-  width: 50vw;
-  height: 50vw;
-  max-width: 960px;
-  max-height: 960px;
-  margin-left: -8vw;
+  object-fit: contain;
+  margin: 0 0 -5% -15%;
+  @include media-breakpoint-down(md) {
+    margin: 0;
+  }
 }
 </style>

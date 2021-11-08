@@ -1,6 +1,6 @@
 <template>
   <div class="footer w-100 p-5">
-    <div class="links flex-center">
+    <div class="links flex-center flex-column flex-md-row">
       <div class="mx-4 cursor-pointer">COLLECTIONS</div>
       <div class="mx-4 cursor-pointer">WHAT & WHY</div>
       <div class="mx-4 cursor-pointer">FAQs</div>

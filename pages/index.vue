@@ -2,9 +2,9 @@
   <section>
     <h1 class="seo-title">{{ title }}</h1>
     <home-header />
-    <about />
     <what-why />
     <road-map />
+    <about />
     <navigation />
     <custom-footer />
   </section>
@@ -42,7 +42,7 @@ export default {
   },
   data() {
     return {
-      title: 'Index',
+      title: 'Metaverse Luchador',
       pkg: pkg,
       componentKey: 0,
       visibleHeight: this.$store.state.base.innerHeight
