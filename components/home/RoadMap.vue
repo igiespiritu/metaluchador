@@ -5,9 +5,9 @@
         </div>
         <div class="meta-black">
             <template v-for="(block, i) in blocks">
-                <div :key="`block-${i}`" class="d-flex flex-wrap flex-md-nowrap">
+                <div :key="`block-${i}`" class="d-flex justify-content-center flex-wrap flex-md-nowrap">
                     <template v-for="(b, j) in block">
-                        <div :key="`b-${j}`" :class="`col tile size-${b.size} p-1 m-1`">
+                        <div :key="`b-${j}`" :class="`col tile ${b.animated ? 'animated' : ''} size-${b.size} p-1 m-1`">
                             <pixelated-bg v-if="b.pixelatedBg" :pixel="b.pixelatedBg.size" :pixelColor="b.pixelatedBg.color">
                                 <div  v-html="b.content" class="flex-center flex-column"></div>
                             </pixelated-bg>
@@ -39,7 +39,7 @@ export default {
     min-height: 190px;
 }
 .size-0 {
-    max-width: 100px;
+    max-width: 90px;
 }
 .size-0_25 {
     max-width: 125px;
@@ -55,6 +55,18 @@ export default {
 }
 .size-4 {
     max-width: 500px;
+}
+
+.tile {
+    cursor: default;
+}
+
+.tile.animated {
+    transition: transform 0.5s ease-in-out;
+}
+
+.tile.animated:hover {
+    transform: scale(1.1);
 }
 
 </style>
