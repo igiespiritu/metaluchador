@@ -44,7 +44,7 @@
             "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-13.png' />"
         },
         {
-            "size": 0
+            "size": "0_25"
         }
     ],
     "row-2" : [
@@ -90,6 +90,9 @@
                 "color": "f05b81"
             },
             "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-16.png' />"
+        },
+        {
+            "size": 3
         }
     ],
     "row-3" : [

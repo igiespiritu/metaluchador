@@ -12,8 +12,8 @@
     <div class="right-nav m-1 m-md-4">
       <div class="d-flex align-items-center flex-column">
         <div class="hamburger-menu my-2"><hamburger /></div>
-        <div class="discord my-2"></div>
-        <div class="twitter my-2"></div>
+        <a href="https://t.co/Jq3UZYxNla?amp=1"><div class="discord my-2"></div></a>
+        <a href="https://twitter.com/MetaLuchador"><div class="twitter my-2"></div></a>
         <div class="collections my-2 flex-center flex-column"><div class="collections-icon mb-1"></div>collections</div>
       </div>
     </div>
