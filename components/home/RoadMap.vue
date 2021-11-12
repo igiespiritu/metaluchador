@@ -7,7 +7,7 @@
             <template v-for="(block, i) in blocks">
                 <div :key="`block-${i}`" class="d-flex flex-wrap flex-md-nowrap">
                     <template v-for="(b, j) in block">
-                        <div :key="`b-${j}`" :class="`col tile size-${b.size} p-1 m-1`">
+                        <div :key="`b-${j}`" :class="`col tile ${b.animated ? 'animated' : ''} size-${b.size} p-1 m-1`">
                             <pixelated-bg v-if="b.pixelatedBg" :pixel="b.pixelatedBg.size" :pixelColor="b.pixelatedBg.color">
                                 <div  v-html="b.content" class="flex-center flex-column"></div>
                             </pixelated-bg>
@@ -55,6 +55,18 @@ export default {
 }
 .size-4 {
     max-width: 500px;
+}
+
+.tile {
+    cursor: default;
+}
+
+.tile.animated {
+    transition: transform 0.5s ease-in-out;
+}
+
+.tile.animated:hover {
+    transform: scale(1.1);
 }
 
 </style>

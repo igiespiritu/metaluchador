@@ -20,7 +20,7 @@
                 <h2 class="d-md-none font-PixelDigivolveItalic meta-tertiary text-right">WHY GET A LUCHADOR ?</h2>
             </div>
             <div class="col-12 col-md-4">
-                <p class="meta-primary">A total of 4500 Meta Luchas will be minted for S1 and each one is qualified to compete in the future</p>
+                <p class="meta-primary">A total of 4500 Meta Luchas will be minted and each one is qualified to compete in the future</p>
             </div>
             <div class="col-1 d-none d-md-block"></div>
         </div>

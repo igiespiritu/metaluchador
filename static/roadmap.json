@@ -16,7 +16,7 @@
                 "size": 10,
                 "color": "55545a"
             },
-            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-1.png' />"
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-11.png' />"
         },
         {
             "size": 1,
@@ -24,10 +24,11 @@
                 "size": 10,
                 "color": "61be85"
             },
-            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-2.png' />"
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-12.png' />"
         },
         {
             "size": 4,
+            "animated": true,
             "pixelatedBg": {
                 "size": 10,
                 "color": "f5b426"
@@ -39,7 +40,8 @@
             "pixelatedBg": {
                 "size": 10,
                 "color": "f05b81"
-            }
+            },
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-13.png' />"
         },
         {
             "size": 0
@@ -62,15 +64,16 @@
                 "size": 10,
                 "color": "22bdcf"
             },
-            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-3.png' />"
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-14.png' />"
         },
         {
             "size": 3,
+            "animated": true,
             "pixelatedBg": {
                 "size": 10,
                 "color": "cd9cc9"
             },
-            "content": "<div class='d-flex'><div class='col'><h2 class='font-PixelMania'>S1</h2><h2 class='font-PixelMania'>S2</h2></div><div class='col'><h5 class='font-PixelDigivolve mr-5'>Oct 2021</h5><h5 class='font-PixelDigivolve'>Dec 2021- jan2022</h5></div></div>"
+            "content": "<div class='d-flex'><div class='col'><h2 class='font-PixelMania'>S1</h2><h2 class='font-PixelMania'>S2</h2></div><div class='col flex-center flex-column'><h5 class='font-PixelDigivolve mb-3'>Nov&nbsp;2021</h5><h5 class='font-PixelDigivolve mt-3'>Jan&nbsp;2022</h5></div></div>"
         },
         {
             "size": 1,
@@ -78,7 +81,7 @@
                 "size": 10,
                 "color": "b5d45c"
             },
-            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-4.png' />"
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-15.png' />"
         },
         {
             "size": 1,
@@ -86,7 +89,7 @@
                 "size": 10,
                 "color": "f05b81"
             },
-            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-5.png' />"
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-16.png' />"
         }
     ],
     "row-3" : [
@@ -106,7 +109,7 @@
                 "size": 10,
                 "color": "e9da35"
             },
-            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-6.png' />"
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-17.png' />"
         },
         {
             "size": 1,
@@ -114,10 +117,11 @@
                 "size": 10,
                 "color": "9676b5"
             },
-            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-7.png' />"
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-18.png' />"
         },
         {
             "size": 3,
+            "animated": true,
             "pixelatedBg": {
                 "size": 10,
                 "color": "497bc2"
@@ -130,7 +134,7 @@
                 "size": 10,
                 "color": "f59d22"
             },
-            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-8.png' />"
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-19.png' />"
         },
         {
             "size": "0_25"
@@ -156,11 +160,12 @@
         },
         {
             "size": 2,
+            "animated": true,
             "pixelatedBg": {
                 "size": 10,
                 "color": "f67929"
             },
-            "content": "<h5 class='font-PixelMania text-center m-0'>HLE<br />GAME<br />LAUNCH</h5><p class='text-center m-0'>2023</p>"
+            "content": "<h5 class='font-PixelMania text-center m-0'>MLE<br />GAME<br />LAUNCH</h5><p class='text-center m-0'>2023</p>"
         },
         {
             "size": 1,
@@ -168,7 +173,7 @@
                 "size": 10,
                 "color": "9ed9e9"
             },
-            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-9.png' />"
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-20.png' />"
         },
         {
             "size": 1,
@@ -176,10 +181,11 @@
                 "size": 10,
                 "color": "ee326f"
             },
-            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-10.png' />"
+            "content": "<img src='https://metalucha.s3.ap-southeast-1.amazonaws.com/assets/images/roadmap/face-21.png' />"
         },
         {
             "size": 2,
+            "animated": true,
             "pixelatedBg": {
                 "size": 10,
                 "color": "e5e343"
