@@ -11,10 +11,12 @@
     </div>
     <div class="right-nav m-1 m-md-4">
       <div class="d-flex align-items-center flex-column">
-        <div class="hamburger-menu my-2"><hamburger /></div>
-        <a href="https://t.co/Jq3UZYxNla?amp=1"><div class="discord my-2"></div></a>
-        <a href="https://twitter.com/MetaLuchador"><div class="twitter my-2"></div></a>
-        <div class="collections my-2 flex-center flex-column"><div class="collections-icon mb-1"></div>collections</div>
+        <div class="hamburger-menu my-2"><hamburger @toggle="burgerToggled" /></div>
+        <div class="slide-out flex-center flex-column">
+          <a href="https://t.co/Jq3UZYxNla?amp=1"><div class="discord my-2"></div></a>
+          <a href="https://twitter.com/MetaLuchador"><div class="twitter my-2"></div></a>
+          <div class="collections my-2 flex-center flex-column"><div class="collections-icon mb-1"></div>collections</div>
+        </div>
       </div>
     </div>
   </div>
@@ -36,6 +38,7 @@ export default {
   },
   data (){
     return {
+      sideMenuOpen: false,
       buttonColor: variables.metaSecondary,
       logoDimension: {
         maxWidth: 412,
@@ -76,10 +79,20 @@ export default {
       gsap.to('.logo-txt', 0.5, { width: '100%'})
       gsap.to('.logo-cta', 0.5, { scale: 1, marginTop: 20, height: 'unset'})
       gsap.to('.left-nav', 0.5, { height: 1080, width: '50%' })
+    },
+    burgerToggled(e) {
+      console.log('burger', e)
+      if(e) {
+        gsap.to('.slide-out', 0.5, { x: 0 })
+      } else {
+        gsap.to('.slide-out', 0.5, { x: 100 })
+      }
     }
   },
   mounted() {
     window.addEventListener('scroll', this.scrolling)
+
+    gsap.set('.slide-out', { x: 100 })
   }
 }
 </script>
