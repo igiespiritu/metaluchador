@@ -20,8 +20,11 @@
 </template>
 
 <script>
+import { gsap } from 'gsap'
 import PixelatedBg from '../common/PixelatedBg.vue'
 import blocksJSON from '../../static/roadmap.json'
+
+const tl = gsap.timeline({ pause: true, repeat: 5 })
 
 export default {
     name: 'RoadMap',
@@ -30,6 +33,15 @@ export default {
         return {
             blocks: blocksJSON
         }
+    },
+    mounted() {
+        $('.tile.animated').each(_ => {
+            const elem = $('.tile.animated')[_]
+            tl.to(elem, { duration: 0.5, scale: 1.1 })
+            tl.to(elem, { duration: 0.5, scale: 1 }, '+=0.5')
+        })
+
+        tl.play();
     }
 }
 </script>
