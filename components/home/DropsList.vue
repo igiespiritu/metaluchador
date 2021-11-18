@@ -5,9 +5,6 @@
             <h1 class="col font-PixelDigivolveItalic meta-secondary text-center">COLLECTIONS</h1>
             <div class="col strike-line"></div>
         </div>
-        <!-- <div v-for="(drop, i) in drops" :key='`data-${i}`'>
-            <img class="wrestler" :src="`${wrestlerImage(wrestlerID(drop['New MetaLucha#']))}`" alt="">
-        </div> -->
         <div class="d-flex flex-wrap">
             <div v-for="(drop, i) in paginate"  :key='`data-${i}`' class="drop-container my-4">
                 <div class="flex-center m-auto">
@@ -85,7 +82,7 @@ export default {
         },
         prevBtn() {
             const page = this.currentPage - 1
-            page >= 2 ? this.setPage(page) : console.log('end of list')
+            page >= 1 ? this.setPage(page) : console.log('end of list')
         }
     }
 }
