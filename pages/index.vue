@@ -2,6 +2,7 @@
   <section>
     <h1 class="seo-title">{{ title }}</h1>
     <home-header />
+    <drops-list />
     <what-why />
     <road-map />
     <about />
@@ -14,6 +15,7 @@
 const pkg = require('../package')
 import Navigation from '../components/common/Navigation.vue'
 import HomeHeader from '../components/home/HomeHeader.vue'
+import DropsList from '../components/home/DropsList.vue'
 import About from '../components/home/AboutSection.vue'
 import WhatWhy from '../components/home/WhatWhy.vue'
 import RoadMap from '../components/home/RoadMap.vue'
@@ -35,6 +37,7 @@ export default {
   components: {
     Navigation,
     HomeHeader,
+    DropsList,
     About,
     WhatWhy,
     RoadMap,

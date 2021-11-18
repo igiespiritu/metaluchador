@@ -24,7 +24,6 @@
 
 <script>
 import Hamburger from './Hamburger.vue'
-import PixelatedButton from './PixelatedButton.vue'
 import PixelatedBg from './PixelatedBg.vue'
 import variables from '~/assets/sass/_variables.scss'
 import { gsap } from 'gsap'
@@ -33,7 +32,6 @@ export default {
   name: 'Navigation',
   components: {
     Hamburger,
-    PixelatedButton,
     PixelatedBg
   },
   data (){
