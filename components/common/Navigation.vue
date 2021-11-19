@@ -1,13 +1,15 @@
 <template>
   <div :class="`nav vw-100 ${ isMobile ? 'mobile' : '' }`">
     <div class="left-nav m-2 m-md-4">
-        <div class="logo-column flex-column flex-center margin-center">
-          <div class="logo flex-column flex-center justify-content-between">
-            <div class="logo-img"></div>
-            <div class="logo-txt"></div>
+        <nuxt-link to="/">
+          <div class="logo-column flex-column flex-center margin-center">
+            <div class="logo flex-column flex-center justify-content-between">
+              <div class="logo-img"></div>
+              <div class="logo-txt"></div>
+            </div>
+            <div class="logo-cta"><pixelated-bg :pixel="8" :pixelColor="`00d6ff`"><h2 class="m-3">BRAWLING SOON</h2></pixelated-bg></div>
           </div>
-          <div class="logo-cta"><pixelated-bg :pixel="8" :pixelColor="`00d6ff`"><h2 class="m-3">BRAWLING SOON</h2></pixelated-bg></div>
-        </div>
+        </nuxt-link>
     </div>
     <div class="right-nav m-1 m-md-4">
       <div class="d-flex align-items-center flex-column">
@@ -15,7 +17,9 @@
         <div class="slide-out flex-center flex-column">
           <a href="https://t.co/Jq3UZYxNla?amp=1"><div class="discord my-2"></div></a>
           <a href="https://twitter.com/MetaLuchador"><div class="twitter my-2"></div></a>
-          <div class="collections my-2 flex-center flex-column"><div class="collections-icon mb-1"></div>collections</div>
+          <nuxt-link v-if="!isCollection" to='/collections'>
+            <div class="collections my-2 flex-center flex-column"><div class="collections-icon mb-1"></div>collections</div>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -50,19 +54,25 @@ export default {
   computed: {
     isMobile() {
       return this.$store.state.base.screenSize == 'xs'
+    },
+    isCollection() {
+      return this.$route.name == 'collections'
     }
   },
   methods: {
     scrolling() {
-      const top = document.scrollingElement.scrollTop
+      if(this.$route.name == 'index'){
+        const top = document.scrollingElement.scrollTop
 
-      if(top >= 540 && !this.mini && !this.isMobile) {
-        this.shrink()
-      } else if(top <= 540 && this.mini && !this.isMobile) {
-        this.expand()
+        if(top >= 540 && !this.mini && !this.isMobile) {
+          this.shrink()
+        } else if(top <= 540 && this.mini && !this.isMobile) {
+          this.expand()
+        }
       }
     },
     shrink() {
+      console.log('shrink')
       this.mini = true
       gsap.to('.logo', 0.5, { width: this.logoDimension.minWidth, height: this.logoDimension.minHeight })
       gsap.to('.logo-img', 0.5, { width: '20%'})
@@ -71,6 +81,7 @@ export default {
       gsap.to('.left-nav', 0.5, { height: 62, width: this.logoDimension.minWidth })
     },
     expand() {
+      console.log('expand')
       this.mini = false
       gsap.to('.logo', 0.5, { width: this.logoDimension.maxWidth, height: this.logoDimension.maxHeight })
       gsap.to('.logo-img', 0.5, { width: '100%'})
@@ -79,7 +90,6 @@ export default {
       gsap.to('.left-nav', 0.5, { height: 1080, width: '50%' })
     },
     burgerToggled(e) {
-      console.log('burger', e)
       if(e) {
         gsap.to('.slide-out', 0.5, { x: 0 })
       } else {
@@ -88,8 +98,13 @@ export default {
     }
   },
   mounted() {
-    window.addEventListener('scroll', this.scrolling)
-
+    console.log('>> navigation mounted', this.$route.name)
+    if(this.$route.name === 'index') {
+      window.addEventListener('scroll', this.scrolling)
+    } else {
+      this.shrink()
+    }
+    
     gsap.set('.slide-out', { x: 100 })
   }
 }

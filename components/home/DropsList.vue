@@ -7,7 +7,7 @@
         </div>
         <div class="d-flex flex-wrap">
             <div v-for="(drop, i) in paginate"  :key='`data-${i}`' class="drop-container my-4">
-                <div class="flex-center m-auto">
+                <div class="flex-center m-auto cursor-pointer" @click="openLucha(drop['New MetaLucha#'])">
                     <pixelated-wrestler-bg :pixel="4" :pixelColor="`fff`">
                         <img class="wrestler" :src="`${wrestlerImage(wrestlerID(drop['New MetaLucha#']))}`" alt="">
                     </pixelated-wrestler-bg>
@@ -27,6 +27,7 @@
             </div>
             <pixelated-arrow class="mx-5" direction="right" @click="nextBtn" />
         </div>
+        <lucha-modal v-if="modalOpen" :lucha="selectedLucha"></lucha-modal>
     </div>
 </template>
 
@@ -34,16 +35,19 @@
 import dataset from '../../static/wrestlers.json'
 import PixelatedWrestlerBg from '../common/PixelatedWrestlerBg.vue'
 import PixelatedArrow from '../common/PixelatedArrow.vue'
+import LuchaModal from '../common/LuchaModal.vue'
 
 export default {
     name: 'DropsList',
-    components: { PixelatedWrestlerBg, PixelatedArrow },
+    components: { PixelatedWrestlerBg, PixelatedArrow, LuchaModal },
     data() {
         return {
             drops: [],
             currentPage: 0,
             itemsPerPage: 10,
-            resultCount: 0
+            resultCount: 0,
+            modalOpen: false,
+            selectedLucha: {}
         }
     },
     mounted() {
@@ -83,6 +87,10 @@ export default {
         prevBtn() {
             const page = this.currentPage - 1
             page >= 1 ? this.setPage(page) : console.log('end of list')
+        },
+        openLucha(e) {
+            this.selectedLucha = this.drops.find(_ => _['New MetaLucha#'] == e)
+            this.modalOpen = true
         }
     }
 }

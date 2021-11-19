@@ -1,10 +1,9 @@
 <template>
   <section>
     <h1 class="seo-title">{{ title }}</h1>
-    <home-header />
-    <what-why />
-    <road-map />
-    <about />
+    <div class="spacer-100"></div>
+    <drops-list />
+    <div class="spacer-100"></div>
     <navigation />
     <custom-footer />
   </section>
@@ -13,10 +12,7 @@
 <script>
 const pkg = require('../package')
 import Navigation from '../components/common/Navigation.vue'
-import HomeHeader from '../components/home/HomeHeader.vue'
-import About from '../components/home/AboutSection.vue'
-import WhatWhy from '../components/home/WhatWhy.vue'
-import RoadMap from '../components/home/RoadMap.vue'
+import DropsList from '../components/home/DropsList.vue'
 import CustomFooter from '../components/common/CustomFooter.vue'
 
 export default {
@@ -34,10 +30,7 @@ export default {
   },
   components: {
     Navigation,
-    HomeHeader,
-    About,
-    WhatWhy,
-    RoadMap,
+    DropsList,
     CustomFooter
   },
   data() {
