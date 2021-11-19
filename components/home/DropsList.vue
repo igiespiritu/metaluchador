@@ -9,7 +9,7 @@
             <div v-for="(drop, i) in paginate"  :key='`data-${i}`' class="drop-container my-4">
                 <div class="flex-center m-auto cursor-pointer" @click="openLucha(drop['New MetaLucha#'])">
                     <pixelated-wrestler-bg :pixel="4" :pixelColor="`fff`">
-                        <img class="wrestler" :src="`${wrestlerImage(wrestlerID(drop['New MetaLucha#']))}`" alt="">
+                        <img class="wrestler-thumb" :src="`${wrestlerImage(wrestlerID(drop['New MetaLucha#']))}`" alt="">
                     </pixelated-wrestler-bg>
                 </div>
                 <h4 class="font-PixelDigivolveItalic text-center mt-3 mb-0">LUCHADOR {{ wrestlerID(drop['New MetaLucha#']) }}</h4>
@@ -27,7 +27,18 @@
             </div>
             <pixelated-arrow class="mx-5" direction="right" @click="nextBtn" />
         </div>
-        <lucha-modal v-if="modalOpen" :lucha="selectedLucha"></lucha-modal>
+        <lucha-modal v-if="modalOpen" :lucha="selectedLucha" @click="closeModal">
+            <div class="d-flex">
+                <div class="col-6 flex-center">
+                    <pixelated-wrestler-bg :pixel="9" :pixelColor="`fff`">
+                        <img class="wrestler" :src="`${wrestlerImage(wrestlerID(selectedLucha['New MetaLucha#']))}`" alt="">
+                    </pixelated-wrestler-bg>
+                </div>
+                <div class="col-6 flex-center">
+                    <div v-html="selectedLucha['Race with Traits']"></div>
+                </div>
+            </div>
+        </lucha-modal>
     </div>
 </template>
 
@@ -91,6 +102,9 @@ export default {
         openLucha(e) {
             this.selectedLucha = this.drops.find(_ => _['New MetaLucha#'] == e)
             this.modalOpen = true
+        },
+        closeModal() {
+            this.modalOpen = false
         }
     }
 }
@@ -109,6 +123,9 @@ export default {
     background-color: #FFF;
 }
 .wrestler {
+    width: 100%;
+}
+.wrestler-thumb {
     width: 212px;
 }
 </style>
