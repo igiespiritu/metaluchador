@@ -72,7 +72,6 @@ export default {
       }
     },
     shrink() {
-      console.log('shrink')
       this.mini = true
       gsap.to('.logo', 0.5, { width: this.logoDimension.minWidth, height: this.logoDimension.minHeight })
       gsap.to('.logo-img', 0.5, { width: '20%'})
@@ -81,7 +80,6 @@ export default {
       gsap.to('.left-nav', 0.5, { height: 62, width: this.logoDimension.minWidth })
     },
     expand() {
-      console.log('expand')
       this.mini = false
       gsap.to('.logo', 0.5, { width: this.logoDimension.maxWidth, height: this.logoDimension.maxHeight })
       gsap.to('.logo-img', 0.5, { width: '100%'})
@@ -98,13 +96,11 @@ export default {
     }
   },
   mounted() {
-    console.log('>> navigation mounted', this.$route.name)
     if(this.$route.name === 'index') {
       window.addEventListener('scroll', this.scrolling)
     } else {
       this.shrink()
     }
-    
     gsap.set('.slide-out', { x: 100 })
   }
 }

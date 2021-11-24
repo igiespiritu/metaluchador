@@ -1,5 +1,5 @@
 <template>
-    <section class="what-why content d-flex flex-column">
+    <section id="whatwhy" class="what-why content d-flex flex-column">
         <div class="spacer-100"></div>
         <div class="d-flex justify-content-center flex-column flex-md-row h-100 my-5">
             <div class="col-2 d-none d-md-block "></div>

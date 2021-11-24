@@ -1,5 +1,5 @@
 <template>
-  <section class="about content">
+  <section id="about" class="about content">
     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center h-100">
       <div class="col-12 col-md-3">
           <img class="wrestler" :src="`${wrestlerURL}promotional-wrestlers/Wrestler_${wrestlerNumber}.gif`">

@@ -1,5 +1,5 @@
 <template>
-    <section class="roadmap content">
+    <section id="roadmap" class="roadmap content">
         <div class="flex-center mb-4">
             <h1 class="meta-tertiary">RoadMap</h1>
         </div>
