@@ -24,7 +24,7 @@ import { gsap } from 'gsap'
 import PixelatedBg from '../common/PixelatedBg.vue'
 import blocksJSON from '../../static/roadmap.json'
 
-const tl = gsap.timeline({ pause: true, repeat: 5 })
+const tl = gsap.timeline({ pause: true, repeat: -1 })
 
 export default {
     name: 'RoadMap',
