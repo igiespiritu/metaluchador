@@ -16,7 +16,7 @@ export default {
 .modal {
     background-color: rgba(0,0,0,0.5);
     .card {
-        background-color: rgb(120,120,120);
+        background-color: rgba(0,0,0,0.75);
         border-radius: 20px;
         max-width: 1024px;
         max-height: 768px;

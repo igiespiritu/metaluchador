@@ -2,7 +2,7 @@
   <section id="about" class="about content">
     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center h-100">
       <div class="col-12 col-md-3">
-          <img class="wrestler" :src="`${wrestlerURL}promotional-wrestlers/Wrestler_${wrestlerNumber}.gif`">
+          <img class="wrestler" :src="`${wrestlerURL}promotional-wrestlers/Promotional_Wrestler%23${wrestlerNumber}.gif`">
       </div>
       <div class="col-12 col-md-9 p-5">
         <h2 class="d-none d-md-block font-PixelDigivolveItalic meta-accent mb-4">ABOUT&nbsp;METAVERSE LUCHADOR&nbsp;ENTERTAINMENT</h2>
@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       wrestlerURL: 'https://meta-luchador-wrestlers.s3.ap-southeast-1.amazonaws.com/',
-      wrestlerNumber: 132
+      wrestlerNumber: 139
     }
   }
 }

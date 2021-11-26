@@ -14,13 +14,13 @@
     <div class="right-nav m-1 m-md-4">
       <div class="d-flex align-items-center flex-column">
         <div class="hamburger-menu my-2"><hamburger @toggle="burgerToggled" /></div>
-        <div class="slide-out flex-center flex-column">
+        <div class="slide-out d-flex align-items-center flex-column">
           <a href="https://t.co/Jq3UZYxNla?amp=1"><div class="discord my-2"></div></a>
           <a href="https://twitter.com/MetaLuchador"><div class="twitter my-2"></div></a>
-          <nuxt-link v-if="!isCollection" to='/collections'>
-            <div class="collections my-2 flex-center flex-column"><div class="collections-icon mb-1"></div>collections</div>
-          </nuxt-link>
         </div>
+        <!-- <nuxt-link v-if="!isCollection" to='/collections' class="collections-btn">
+          <div class="collections my-2 flex-center flex-column"><div class="collections-icon mb-1"></div>collections</div>
+        </nuxt-link> -->
       </div>
     </div>
   </div>
@@ -89,9 +89,9 @@ export default {
     },
     burgerToggled(e) {
       if(e) {
-        gsap.to('.slide-out', 0.5, { x: 0 })
+        gsap.to('.slide-out', 0.5, { height: 112 })
       } else {
-        gsap.to('.slide-out', 0.5, { x: 100 })
+        gsap.to('.slide-out', 0.5, { height: 0 })
       }
     }
   },
@@ -101,7 +101,7 @@ export default {
     } else {
       this.shrink()
     }
-    gsap.set('.slide-out', { x: 100 })
+    gsap.set('.slide-out', { transformOrigin: '0% 0%', height: 0 })
   }
 }
 </script>
@@ -176,7 +176,9 @@ export default {
     height: 0;
   }
 }
-
+.slide-out {
+  overflow: hidden;
+}
 .logo-cta {
   margin-top: 20px;
 }

@@ -1,0 +1,18 @@
+{
+    "spaceId": "9afifzga4d8w",
+    "environmentId": "master",
+    "managementToken": "vESV7XgszC1Nk1xUqw_xnnjc8JSrLF_ONt4KNeZw71Q",
+    "saveFile": true,
+    "contentFile": "export.json",
+    "includeDrafts": false,
+    "includeArchived": false,
+    "contentOnly": true,
+    "queryEntries": [
+      "content_type=luchador"
+    ],
+    "downloadAssets": false,
+    "host": "api.contentful.com",
+    "maxAllowedLimit": 1000,
+    "useVerboseRenderer": false
+  }
+  

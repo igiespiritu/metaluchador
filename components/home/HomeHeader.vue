@@ -4,7 +4,7 @@
       <div class="col-6 d-none d-md-block"></div>
       <div class="col-12 col-md-6 d-flex justify-content-start align-items-end w-100 h-100">
         <!-- <div class="wrestler w-100 h-100" :style="`background: url(${wrestlerURL}promotional-wrestlers/Wrestler_${wrestlerNumber}.gif); background-size: contain;`"></div> -->
-        <img class="wrestler w-100 h-100" :src="`${wrestlerURL}promotional-wrestlers/Wrestler_${wrestlerNumber}.gif`" alt="wrestler">
+        <img class="wrestler w-100 h-100" :src="`${wrestlerURL}promotional-wrestlers/Promotional_Wrestler%23${wrestlerNumber}.gif`" alt="wrestler">
       </div>
     </div>
   </section>
@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       wrestlerURL: 'https://meta-luchador-wrestlers.s3.ap-southeast-1.amazonaws.com/',
-      wrestlerNumber: 132,
+      wrestlerNumber: 205,
       screenWidth: 0
     }
   }

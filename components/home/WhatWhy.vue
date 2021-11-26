@@ -27,7 +27,11 @@
         <div class="flex-center flex-column my-5">
             <h5 class="font-PixelDigivolveItalic">STILL&nbsp;CLUELESS&nbsp;?</h5>
             <div class="reach-out">
-                <pixelated-bg  :pixel="6" :pixelColor="`00d6ff`"><h4 class="cta flex-center m-0">REACH OUT!</h4></pixelated-bg>
+                <a href="https://t.co/Jq3UZYxNla?amp=1">
+                    <pixelated-bg  :pixel="6" :pixelColor="`00d6ff`">
+                        <h4 class="cta flex-center m-0">REACH OUT!</h4>
+                    </pixelated-bg>
+                </a>
             </div>
         </div>
         <div class="spacer-100"></div>

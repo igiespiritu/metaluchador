@@ -53,7 +53,10 @@
         </div> -->
 
         <lucha-modal v-if="modalOpen" :lucha="selectedLucha" @click="closeModal">
-            <div class="d-flex">
+            <div class="d-flex flex-wrap">
+                <div class="col-12">
+                    <h1 class="meta-secondary font-PixelDigivolveItalic text-center">LUCHADOR {{ wrestlerID(selectedLucha['New MetaLucha#']) }}</h1>
+                </div>
                 <div class="col-6 flex-center">
                     <pixelated-wrestler-bg :pixel="9" :pixelColor="`fff`">
                         <img class="wrestler" :src="`${wrestlerImage(wrestlerID(selectedLucha['New MetaLucha#']))}`" alt="">
@@ -62,8 +65,12 @@
                 </div>
                 <div class="col-6 flex-center">
                     <div>
-                        {{ selectedLucha['List of Traits'] }}
-                        <!-- <div v-for="(i, trait) in selectedLucha.traits" :key="`trait-${i}`">
+                        <div v-for="lKey in luchaKey">
+                           <h4 v-if="excludedKeys(lKey) && !keyEmpty(lKey)">
+                               <span class="meta-secondary">{{ lKey }}:</span> <span class="meta-accent">{{ selectedLucha[lKey] }}</span>
+                           </h4>
+                        </div>
+                        <!-- <div v-for="trait in selectedLucha.traits" :key="trait.id">
                             {{ trait.name }}
                         </div> -->
                     </div>
@@ -130,6 +137,9 @@ export default {
         },
         drops_() {
             return this.$store.state['luchador'].luchadors || []
+        },
+        luchaKey() {
+            return Object.keys(this.selectedLucha)
         }
     },
     methods: {
@@ -153,10 +163,25 @@ export default {
         openLucha(e) {
             this.selectedLucha = this.drops.find(_ => _['New MetaLucha#'] == e)
             // this.selectedLucha = this.drops_.find(_ => _.id == e)
+            console.log('selectedLucha', this.selectedLucha)
             this.modalOpen = true
         },
         closeModal() {
             this.modalOpen = false
+        },
+        excludedKeys(e) {
+            const exclude = [
+                'Race with Traits',
+                'List of Traits',
+                'Wrestler',
+                'Old MetaLucha#',
+                'New MetaLucha#'
+                ]
+
+            return exclude.indexOf(e) == -1
+        },
+        keyEmpty(e) {
+            return this.selectedLucha[e] == ''
         }
     }
 }

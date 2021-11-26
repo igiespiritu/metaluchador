@@ -33,9 +33,9 @@ export default {
     DropsList,
     CustomFooter
   },
-  async asyncData({ store }) {
-    await store.dispatch('luchador/init')
-  },
+  // async asyncData({ store }) {
+  //   await store.dispatch('luchador/init')
+  // },
   data() {
     return {
       title: 'Metaverse Luchador',
