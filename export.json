@@ -1,0 +1,141 @@
+{
+  "tags": [
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "9afifzga4d8w"
+          }
+        },
+        "id": "7ie9otoBTKjpT4YtaYueok",
+        "type": "Entry",
+        "createdAt": "2021-11-23T08:00:37.939Z",
+        "updatedAt": "2021-11-23T23:44:18.087Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 27,
+        "publishedAt": "2021-11-23T23:44:18.087Z",
+        "firstPublishedAt": "2021-11-23T08:00:48.412Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yTRZ3z1QurMQKhhwhbUvm"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yTRZ3z1QurMQKhhwhbUvm"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 28,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3yTRZ3z1QurMQKhhwhbUvm"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "luchador"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "en-US": 1
+        },
+        "name": {
+          "en-US": "0001"
+        },
+        "traits": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5jWIl6N62rMeBw4Tbgzwfd"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "9RQ5cvcl6RDjxSLfUEzKs"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6YgbEcindB5LqXv7RdaoxG"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1sVdLwfd3zrfmOPO7EUrZ1"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "uuSAGcPSqOZ7s9bQLd8Cw"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3DuWsJROPx1VsxlE9wJfX0"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3SKpEehrZGNdijDaxrvp3N"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "uuSAGcPSqOZ7s9bQLd8Cw"
+              }
+            }
+          ]
+        },
+        "url": {
+          "en-US": "https://meta-luchador-wrestlers.s3.ap-southeast-1.amazonaws.com/wrestlers/MetaLuchaS01%230001.gif"
+        },
+        "rarity": {
+          "en-US": "Common"
+        }
+      }
+    }
+  ],
+  "assets": [
+  ]
+}

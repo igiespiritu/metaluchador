@@ -1,5 +1,5 @@
 <template>
-    <section class="what-why content d-flex flex-column">
+    <section id="whatwhy" class="what-why content d-flex flex-column">
         <div class="spacer-100"></div>
         <div class="d-flex justify-content-center flex-column flex-md-row h-100 my-5">
             <div class="col-2 d-none d-md-block "></div>
@@ -27,7 +27,11 @@
         <div class="flex-center flex-column my-5">
             <h5 class="font-PixelDigivolveItalic">STILL&nbsp;CLUELESS&nbsp;?</h5>
             <div class="reach-out">
-                <pixelated-bg  :pixel="6" :pixelColor="`00d6ff`"><h4 class="cta flex-center m-0">REACH OUT!</h4></pixelated-bg>
+                <a href="https://t.co/Jq3UZYxNla?amp=1">
+                    <pixelated-bg  :pixel="6" :pixelColor="`00d6ff`">
+                        <h4 class="cta flex-center m-0">REACH OUT!</h4>
+                    </pixelated-bg>
+                </a>
             </div>
         </div>
         <div class="spacer-100"></div>

@@ -19,6 +19,15 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+  &:hover {
+    text-decoration: none;
+    color: unset;
+  }
+}
+
 .nav {
   position: fixed;
   top: 0;
