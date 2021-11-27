@@ -8,8 +8,9 @@
                 <h2 class="d-md-none font-PixelDigivolveItalic meta-tertiary text-right">WHAT IS METAVERSE LUCAHDOR ENTERTAINMENT ?</h2>
             </div>
             <div class="col-12 col-md-4">
+                <p class="meta-primary">Metaverse Luchador Entertainment (MLE) is a premiere NFT project in the Cardano Blockchain. It is the home of the Meta Luchas-- pixelized luchadors set to battle it out in a game that will be launched in the future.</p>
                 <p class="meta-primary">MLE's aim is to create an experience where wrestling fans and NFT collectors jump inside a wrestling ring for bragging rights and for the coveted title of world champion.</p>
-                <p class="meta-primary">3 divisions will storm season 1 as Heavyweights, Cruiserwieghts, and Middleweights duke it out for ring supremacy. Each division will be composed of 1500 distinct Meta Luchas each with their own unique aesthetic. The team is composed of seasoned game developers, coders, and artists, lead by LuchaGab, an Industrial Designer from the Philippines. LuchaGab is an avid fan of wrestling and wishes to bring a great experience to the collectors and supporters of the project.</p>
+                <p class="meta-primary">The Middleweight division will storm season 1 as a total of 1500 Meta Luchas will be dropped on the first release. Seasons 2 and 3 would consist of drops for the Cruiserweight and Heavyweight divisions. To balance it all out, 4500 Femme Fatale Luchas will be unleashed in Season 4.</p>
             </div>
             <div class="col-1 d-none d-md-block"></div>
         </div>
@@ -20,7 +21,8 @@
                 <h2 class="d-md-none font-PixelDigivolveItalic meta-tertiary text-right">WHY GET A LUCHADOR ?</h2>
             </div>
             <div class="col-12 col-md-4">
-                <p class="meta-primary">A total of 4500 Meta Luchas will be minted and each one is qualified to compete in the future</p>
+                <p class="meta-primary">A total of 10,000 (10% of which are allocated for promotional purposes) Meta Luchas will be minted from Season 1-4, each with their own unique aesthetic. Each Meta Lucha is qualified to compete in the future.</p>
+                <p class="meta-primary">The team is composed of seasoned game developers, coders, and artists, led by LuchaGab, an Industrial Designer from the Philippines. LuchaGab is an avid fan of wrestling and wishes to bring a great experience to the collectors and supporters of the project.</p>
             </div>
             <div class="col-1 d-none d-md-block"></div>
         </div>

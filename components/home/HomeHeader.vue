@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       wrestlerURL: 'https://meta-luchador-wrestlers.s3.ap-southeast-1.amazonaws.com/',
-      wrestlerNumber: 205,
+      wrestlerNumber: 139,
       screenWidth: 0
     }
   }
