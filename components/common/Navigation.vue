@@ -18,9 +18,9 @@
           <a href="https://t.co/Jq3UZYxNla?amp=1"><div class="discord my-2"></div></a>
           <a href="https://twitter.com/MetaLuchador"><div class="twitter my-2"></div></a>
         </div>
-        <!-- <nuxt-link v-if="!isCollection" to='/collections' class="collections-btn">
+        <nuxt-link v-if="!isCollection" to='/collections' class="collections-btn">
           <div class="collections my-2 flex-center flex-column"><div class="collections-icon mb-1"></div>collections</div>
-        </nuxt-link> -->
+        </nuxt-link>
       </div>
     </div>
   </div>
