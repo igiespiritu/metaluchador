@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="spacer-100"></div>
-        <p class="text-center"><span class="meta-primary">Policy ID: </span>5986681de9e63a9ad4a5b29dfc567229dc9d97a9df453e40407020b6</p>
+        <h4 class="text-center">Policy ID: 5986681de9e63a9ad4a5b29dfc567229dc9d97a9df453e40407020b6</h4>
         <div class="spacer-100"></div>
     </section>
 </template>
